@@ -86,8 +86,8 @@ A     B     CARRY   SUM
 ```
 This can be represented with boolean notation like so:
 
-* SUM = A ^ B  (A xor B)
-* CARRY = A && B  (A and B)
+* SUM = A xor B
+* CARRY = A && B
 
 
 How can you represent the SUM and CARRY of adding three digits with a truth table and in boolean notation?
