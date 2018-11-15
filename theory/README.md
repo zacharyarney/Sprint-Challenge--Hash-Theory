@@ -18,11 +18,6 @@
 
   changes the font to bold.
 
-  * Come up with regexes for the two above sequences. The one to set the
-    cursor position should accept any digits for the row and column. The
-    bold sequence need only accept `1` (and is a trivial regex). (ESC is
-    a single character which can be represented with `\e` in the regex.)
-
   * Draw a state machine diagram for a VT-100 that can consume regular
     character sequences as well as the two above ESC sequences.
 
