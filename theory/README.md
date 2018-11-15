@@ -5,6 +5,10 @@
 > A useful tool for drawing state machines is [Evan's FSM
 > Designer](http://madebyevan.com/fsm/).
 
+* A lion can be sleeping, eating, hunting, or preening. Draw a state
+  machine diagram for the lion and label the transition events that
+  cause state transitions.
+
 * The VT-100 terminal (console) outputs text to the screen as it
   receives it over the wire. One exception is that when it receives an
   ESC character (ASCII 27), it goes into a special mode where it looks
