@@ -71,7 +71,7 @@ A     B     C     result
 1     1     1       ?
 ```
 
-### STRETCH
+## STRETCH GOAL
 
 The sum of two binary digits can be represented with the following truth table:
 
