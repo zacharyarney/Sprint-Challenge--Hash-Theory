@@ -5,10 +5,6 @@
 > A useful tool for drawing state machines is [Evan's FSM
 > Designer](http://madebyevan.com/fsm/).
 
-* A lion can be sleeping, eating, hunting, or preening. Draw a state
-  machine diagram for the lion and label the transition events that
-  cause state transitions.
-
 * The VT-100 terminal (console) outputs text to the screen as it
   receives it over the wire. One exception is that when it receives an
   ESC character (ASCII 27), it goes into a special mode where it looks
@@ -34,3 +30,78 @@
 >
 > One of your instructors was once hired to implement VT-100 emulation
 > in an app, and they used a state machine to do it.
+
+
+
+## Computation
+
+Fill out truth tables for the following expressions:
+
+1. (A && !B)
+```
+A     B     result
+-------------------
+0     0       ?
+0     1       ?
+1     0       ?
+1     1       ?
+```
+
+2. (!A || B) && !(A && !B)
+```
+A     B     result
+-------------------
+0     0       ?
+0     1       ?
+1     0       ?
+1     1       ?
+```
+
+3. !(A && B) || (A && C) && !(B || !C)
+```
+A     B     C     result
+-------------------------
+0     0     0       ?
+0     0     1       ?
+0     1     0       ?
+0     1     1       ?
+1     0     0       ?
+1     0     1       ?
+1     1     0       ?
+1     1     1       ?
+```
+
+### STRETCH
+
+The sum of two binary digits can be represented with the following truth table:
+
+* A + B
+```
+A     B     CARRY   SUM
+------------------------
+0     0       0      0
+0     1       0      1
+1     0       0      1
+1     1       1      0
+```
+This can be represented with boolean notation like so:
+
+* SUM = A ^ B  (A xor B)
+* CARRY = A && B  (A and B)
+
+
+How can you represent the SUM and CARRY of adding three digits with a truth table and in boolean notation?
+
+* A + B + C
+```
+A     B     C      carry   sum
+--------------------------------
+0     0     0        ?      ?
+0     0     1        ?      ?
+0     1     0        ?      ?
+0     1     1        ?      ?
+1     0     0        ?      ?
+1     0     1        ?      ?
+1     1     0        ?      ?
+1     1     1        ?      ?
+```
