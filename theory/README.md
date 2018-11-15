@@ -84,13 +84,13 @@ A     B     CARRY   SUM
 1     0       0      1
 1     1       1      0
 ```
-This can be represented with boolean notation like so:
+This can be represented with boolean algebra like so:
 
 * SUM = A xor B
 * CARRY = A && B
 
 
-How can you represent the SUM and CARRY of adding three digits with a truth table and in boolean notation?
+How can you represent the SUM and CARRY of adding three digits with a truth table and in boolean algebra?
 
 * A + B + C
 ```
