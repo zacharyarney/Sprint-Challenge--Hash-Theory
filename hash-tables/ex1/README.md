@@ -1,13 +1,22 @@
 # Merging Two Packages
 
-Given a package with a weight limit `limit` and a list `weights` of item weights, implement a function `get_indices_of_item_weights` that finds two items whose sum of weights equals the weight limit `limit`. Your function should return a tuple `(i, j)` of the indices of the item weights, ordered such that `i > j`. If such a pair doesn’t exist, return an empty tuple.
+Given a package with a weight limit `limit` and a list `weights` of item weights, implement a function `get_indices_of_item_weights` that finds two items whose sum of weights equals the weight limit `limit`. Your function will return an instance of an `Answer` struct that has the following form:
+```
+typdef struct Answer {
+  int index_1;
+  int index_2;
+} Answer;
+```
+where each struct field represents the item weights of the two packages. _**The higher valued index should be placed in the `index_1` field and the smaller index should be placed in the `index_2` field.**_ If such a pair doesn’t exist for the given inputs, your function should return `NULL`.
+
+_NOTE:_ When calling `hash_table_retrieve` with a key that doesn't exist in the hash table, `hash_table_retrieve` will return -1. 
 
 Your solution should run in linear time.
 
 Example:
 ```
-input: arr = [4, 6, 10, 15, 16], limit = 21
-output: (3, 1)   # since these are the indices of weights 6 and 15 whose sum equals 21
+input: int *weights = { 4, 6, 10, 15, 16 }, int length = 5, int limit = 21
+output: Answer{ index_1: 3, index_2: 1 }  # since these are the indices of weights 15 and 6 whose sum equals 21
 ```
 
 ## Hints

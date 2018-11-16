@@ -2,30 +2,37 @@
 
 You've booked a _really_ cheap one-way flight. Unfortunately, that means you have _tons_ of layovers before you reach your destination. The morning of, you woke up late and had to scramble to the airport to catch your first flight. However, in your rush, you accidentally scrambled all your flight tickets. You don't know the route of your entire trip now!
 
-Write a function `reconstruct_trip` to reconstruct your trip from your mass of flight tickets. Each ticket is a two-element array with the source airport as the first element and the destination airport as the second element. The ticket for your first flight has a destination but no source, and the ticket for your final flight has a source, but no destination. 
+Write a function `reconstruct_trip` to reconstruct your trip from your mass of flight tickets. Each ticket is represented as a struct with the following form:
+```
+typedef struct Ticket {
+  char *source;
+  char *destination;
+} Ticket;
+```
+where the `source` string represents the starting airport and the `destination` string represents the next airport along our trip. The ticket for your first flight has a destination with a `source` of `NONE`, and the ticket for your final flight has a `source` with a `destination` of `NONE`. 
 
-An example input might look like this:
-```python
-tickets = [
-  ('PIT', 'ORD'),
-  ('XNA', 'CID'),
-  ('SFO', 'BHM'),
-  ('FLG', 'XNA'),
-  (None, 'LAX'), 
-  ('LAX', 'SFO'),
-  ('CID', 'SLC'),
-  ('ORD', None),
-  ('SLC', 'PIT'),
-  ('BHM', 'FLG'),
-]
+An array of `Tickets` might look like this:
+```c
+Ticket **tickets = {
+  Ticket{ source: "PIT", destination: "ORD" },
+  Ticket{ source: "XNA", destination: "CID" },
+  Ticket{ source: "SFO", destination: "BHM" },
+  Ticket{ source: "FLG", destination: "XNA" },
+  Ticket{ source: "NONE", destination: "LAX" },
+  Ticket{ source: "LAX", destination: "SFO" },
+  Ticket{ source: "CID", destination: "SLC" },
+  Ticket{ source: "ORD", destination: "NONE" },
+  Ticket{ source: "SLC", destination: "PIT" },
+  Ticket{ source: "BHM", destination: "FLG" }
+};
 ```
 
-Your function should output an array with the route of your trip. For the above example, it should look like this:
-```
-['LAX', 'SFO', 'BHM', 'FLG', 'XNA', 'CID', 'SLC', 'PIT', 'ORD']
+Your function should output a `char **` array of strings with the entire route of your trip. For the above example, it should look like this:
+```c
+{ "LAX", "SFO", "BHM", "FLG", "XNA", "CID", "SLC", "PIT", "ORD" }
 ```
 
-Your solution should run in linear time and also be able to handle incorrect ticket chains, namely when the input list of tickets is not cohesive such that there is a ticket that has a starting location which isn't the ending location of some other ticket in the chain or a ticket has an ending location that isn't the starting location of another ticket in the chain. In such cases, your solution should return an empty list.
+Your solution should run in linear time. You can assume that your function will always be handed a valid ticket chain as input. 
 
 ## Hints
 
