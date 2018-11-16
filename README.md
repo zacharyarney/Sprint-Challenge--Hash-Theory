@@ -19,10 +19,10 @@ By solving the problems in this Sprint Challenge, you can earn a total of 19 poi
   * ex2 - 5 pts
 
 #### Computation Stretch - 4 pts
-Stretch points will only be counted if all other problems have been completed.
   * Truth Table - 1 pt
   * Sum - 1 pt
   * Carry - 2 pts
+Stretch points will only be counted if all other problems have been completed.
 
 ### Grading
   * 1: 0-14
