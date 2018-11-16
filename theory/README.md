@@ -37,7 +37,8 @@
 
 Fill out truth tables for the following expressions:
 
-1. (A && !B)
+1. `(A ∧ ¬B)`
+  * alternate notation: `(A && !B)`
 ```
 A     B     result
 -------------------
@@ -47,7 +48,8 @@ A     B     result
 1     1       ?
 ```
 
-2. (!A || B) && !(A && !B)
+2. `(¬A ∨ B) ∧ ¬(A ∧ ¬B)`
+  * alternate notation: `(!A || B) && !(A && !B)`
 ```
 A     B     result
 -------------------
@@ -57,7 +59,8 @@ A     B     result
 1     1       ?
 ```
 
-3. !(A && B) || ( (A && C) && !(B || !C) )
+3. `¬(A ∧ B) ∨ ( (A ∧ C) ∧ ¬(B ∨ ¬C) )`
+  * alternate notation: `!(A && B) || ( (A && C) && !(B || !C) )`
 ```
 A     B     C     result
 -------------------------
@@ -86,11 +89,11 @@ A     B     CARRY   SUM
 ```
 This can be represented with boolean algebra like so:
 
-* SUM = A xor B
-* CARRY = A && B
+* `SUM = A ⊕ B`  (alternate: `A ^ B`)
+* `CARRY = A ∧ B`  (alternate: `A && B`)
 
 
-How can you represent the SUM and CARRY of adding three digits with a truth table and in boolean algebra?
+How can you represent the SUM and CARRY of adding THREE digits with a truth table and in boolean algebra?
 
 * A + B + C
 ```
