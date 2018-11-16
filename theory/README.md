@@ -61,6 +61,7 @@ A     B     result
 
 3. `¬(A ∧ B) ∨ ( (A ∧ C) ∧ ¬(B ∨ ¬C) )`
   * alternate notation: `!(A && B) || ( (A && C) && !(B || !C) )`
+  * (Hint: Is it possible to calculate this using code?)
 ```
 A     B     C     result
 -------------------------
