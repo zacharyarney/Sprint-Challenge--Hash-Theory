@@ -40,7 +40,7 @@ For the state machines portion, you will need a way to draw state machines. A us
 
 For the boolean algebra section, you can either copy your answers into a new text file or fill out the README with your solutions. Just make sure your PM knows where to find them.
 
-#### [Hash Tables](https://github.com/LambdaSchool/Sprint-Challenge--Hash-Theory/tree/master/hash-tables) - 10 pts
+#### [Hash Tables](https://github.com/LambdaSchool/Sprint-Challenge--Hash-Theory/tree/master/hash-tables)
 
 For the hash tables portion of the sprint challenge, you'll be working through some algorithm problems that are amenable to being solved efficiently using a hash table. You know the drill at this point. Navigate into each exercise's directory, read the instructions for the exercise laid out in the README, implement your solution in the .c skeleton file, then make sure your code passes the tests by running the test script with make tests.
 
