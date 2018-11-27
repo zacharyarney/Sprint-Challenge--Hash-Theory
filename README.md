@@ -1,4 +1,4 @@
-# Sprint Challenge: TOPIC - Theory of Computation and Hash Tables
+# Sprint Challenge: Theory of Computation and Hash Tables
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored Computation Theory and Hash Tables. During this Sprint, you studied state machines, boolean algebra, hash tables and continued your exploration of the C programming language. In your challenge this week, you will demonstrate proficiency by designing a state machine, filling out boolean truth tables and solving algorithms in C using hash tables.
 
@@ -18,7 +18,8 @@ You have three hours to complete this challenge. Plan your time accordingly.
 
 ## Description
 
-This sprint challenge is divided up into three parts: State machines (5 points), boolean algebra (4 points) and hash tables (10 points). The point values correspond to approximately how much time you should spend on each. There is also a stretch goal in the boolean algebra which should only be attempted after the rest of the problems have been completed. They will be graded as follows:
+This sprint challenge is divided up into three parts: State machines (5 points), boolean algebra (4 points) and hash tables (10 points). The point values correspond to approximately how much time you should spend on each. There is also a stretch goal in the boolean algebra which should only be attempted after the rest of the problems have been completed.
+
 
 ## Self-Study/Essay Questions
 
