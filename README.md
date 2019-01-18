@@ -1,6 +1,6 @@
 # Sprint Challenge: Theory of Computation and Hash Tables
 
-This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored Computation Theory and Hash Tables. During this Sprint, you studied state machines, boolean algebra, hash tables and continued your exploration of the C programming language. In your challenge this week, you will demonstrate proficiency by designing a state machine, filling out boolean truth tables and solving algorithms in C using hash tables.
+This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint, we explored the history and theory of computation, diving deep into memory and pointers by building array functions and hash tables. In your challenge this week, you will demonstrate proficiency by filling out boolean truth tables and solving algorithms in C using hash tables.
 
 ## Instructions
 
@@ -18,56 +18,57 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 ## Description
 
-This sprint challenge is divided up into three parts: State machines (5 points), boolean algebra (4 points) and hash tables (10 points). The point values correspond to approximately how much time you should spend on each. There is also a stretch goal in the boolean algebra which should only be attempted after the rest of the problems have been completed.
+This sprint challenge is divided up into three parts: Boolean algebra (11 points), hash tables (24 points) and a short interview (20 points). There is also a stretch goal in the boolean algebra section which should only be attempted after the rest of the problems have been completed.
 
+## Interview Questions
 
-## Self-Study/Essay Questions
+During your challenge, you will be pulled aside by a PM for a 5 minute interview. During this interview, you will be expected to answer the following three questions:
 
-You should be able to demonstrate your understanding of this week's concepts by answering the following free-form questions.
+  * 1. What is a computer and how does it work?
+  * 2. What is an array and how does it work?
+  * 3. What is a hash table and how does it work?
 
-- Describe the structure and basic methods of a hash table
-- Describe how a hash table works
-- What is a memory leak and how can they be prevented in C?
-- What are some ways to determine the truth table for a boolean expression?
+You will receive points at the PM's discretion based on the following criteria:
 
-You are expected to be able to answer all these questions.
+  * 20: Would love to have this person on my team!
+  * 14: Wouldn't mind working with this person.
+  * 10: Knowledge is lacking OR poor communication skills
+  *  6: Knowledge is lacking AND poor communication skills
+  *  2: You get 2 points for showing up
+
 
 
 ## Project Set Up
 
 #### [Theory of Computation](https://github.com/LambdaSchool/Sprint-Challenge--Hash-Theory/tree/master/theory)
 
-For the state machines portion, you will need a way to draw state machines. A useful tool for drawing state machines is [Evan's FSM Designer](http://madebyevan.com/fsm/). Alternatively, you can draw your state machine with a pencil/paper and upload a picture.
-
-For the boolean algebra section, you can either copy your answers into a new text file or fill out the README with your solutions. Just make sure your PM knows where to find them.
+You can either copy your answers into a new text file or fill out the README with your solutions. Just make sure your PM knows where to find them.
 
 #### [Hash Tables](https://github.com/LambdaSchool/Sprint-Challenge--Hash-Theory/tree/master/hash-tables)
 
-For the hash tables portion of the sprint challenge, you'll be working through some algorithm problems that are amenable to being solved efficiently using a hash table. You know the drill at this point. Navigate into each exercise's directory, read the instructions for the exercise laid out in the README, implement your solution in the .c skeleton file, then make sure your code passes the tests by running the test script with make tests.
+For the hash tables portion of the sprint challenge, you'll be working through two algorithm problems that are amenable to being solved efficiently using a hash table. You know the drill at this point. Navigate into each exercise's directory, read the instructions for the exercise laid out in the README, implement your solution in the .c skeleton file, then make sure your code passes the tests by running the test script with make tests.
 
 A hash table implementation has been included for you already. Your task is to get the tests passing (ideally using a hash table to do it). You can remind yourself of what hash table functions are available by looking at the hashtable.h header file that is included in each exercise directory (note that the hash table implementations for both exercises differ slightly).
 
 ## Minimum Viable Product
 
-You will achieve MVP for this challenge by earning 14 points, which will be awarded as follows:
+You can earn 35 points from the main coding portion of the sprint challenge and up to 4 extra points for completing the stretch goal. Stretch points will only be counted if all regular problems have been completed.
 
+#### [Theory of Computation](https://github.com/LambdaSchool/Sprint-Challenge--Hash-Theory/tree/master/theory) - 11 pts
+  * Boolean 1 - 3 pt
+  * Boolean 2 - 3 pt
+  * Boolean 3 - 5 pt
 
-#### [Theory of Computation](https://github.com/LambdaSchool/Sprint-Challenge--Hash-Theory/tree/master/theory) - 9 pts
-  * State Machine - 5 pts
-  * Boolean 1 - 1 pt
-  * Boolean 2 - 1 pt
-  * Boolean 3 - 2 pt
-
-#### [Hash Tables](https://github.com/LambdaSchool/Sprint-Challenge--Hash-Theory/tree/master/hash-tables) - 10 pts
-  * ex1 - 5 pts
-  * ex2 - 5 pts
+#### [Hash Tables](https://github.com/LambdaSchool/Sprint-Challenge--Hash-Theory/tree/master/hash-tables) - 24 pts
+  * ex1 - 12 pts
+  * ex2 - 12 pts
 
 Both Hash Table problems will be graded as follows:
-  * 1: Code attempted
-  * 2: Code resembles the correct solution
-  * 3: Tests pass
-  * 4: Tests pass, no hash table memory leaks
-  * 5: Tests pass, no hash table memory leaks, linear runtime complexity  
+  *  3: Code attempted
+  *  6: Code resembles the correct solution
+  * 10: Tests pass
+  * 11: Tests pass, no hash table memory leaks
+  * 12: Tests pass, no hash table memory leaks, linear runtime complexity  
 
 
 #### [Computation Stretch](https://github.com/LambdaSchool/Sprint-Challenge--Hash-Theory/tree/master/theory) - 4 pts
@@ -75,16 +76,17 @@ Both Hash Table problems will be graded as follows:
   * Sum - 1 pt
   * Carry - 2 pts
 
-Stretch points will only be counted if all other problems have been completed.
+
 
 ### Grading
-  * __1__: 0-13
-  * __2__: 14-19
-  * __3__: 20+
 
-If you are close to passing but just a couple of points short of MVP (12-13), your PM can add up to 2 points to your score based on your answers AND participation and completion of your homework assignment for the week.
+Students can receive up to 100 points for their work over the entire week: Array and Hash Table project in C (35 points), coding Sprint Challenge (35 points), interview (20 points), and participation during the week (10 points). 90+ points is a 3, 70-89 is a 2 and 0-69 is a 1.
 
-
-## Stretch Problems
-
-The stretch goal can be found in the [Theory of Computation](https://github.com/LambdaSchool/Sprint-Challenge--Hash-Theory/tree/master/theory) section.
+  * __Project__: 35
+  * __Challenge__: 35
+  * __Interview__: 20
+  * __Participation__: 10
+----------
+  * __3__: 90+
+  * __2__: 70-89
+  * __1__: 0-69
