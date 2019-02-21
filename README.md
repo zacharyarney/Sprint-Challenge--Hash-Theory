@@ -80,13 +80,15 @@ Both Hash Table problems will be graded as follows:
 
 ### Grading
 
-Students can receive up to 100 points for their work over the entire week: Array and Hash Table project in C (35 points), coding Sprint Challenge (35 points), interview (20 points), and participation during the week (10 points). 90+ points is a 3, 70-89 is a 2 and 0-69 is a 1.
+Students can receive up to 55 points in total for this Sprint Challenge (not including 4 extra credit points). 
 
-  * __Project__: 35
   * __Challenge__: 35
   * __Interview__: 20
-  * __Participation__: 10
-----------
-  * __3__: 90+
-  * __2__: 70-89
-  * __1__: 0-69
+
+--------
+
+The score distributions are as follows:
+
+  * __3__: >= 48 points
+  * __2__: >= 35 points
+  * __1__: < 34 points 
